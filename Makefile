@@ -14,7 +14,7 @@ docs:
 		-H dep/plotly.js -H dep/custom.js appendix.md -s -o appendix.html
 
 pushv:
-	git tag -a v${version} -m "Bump to Version v${version}" \
+	git tag -a v${version} -m "Bump to version ${version}" \
 	&& git push origin v${version}
 
 all: analysis docs
