@@ -1,8 +1,13 @@
 # Female Employment after Migration Literature Review
 
-_Version 0.1.0_
+_Version 0.2.0_
+
+[Bentley Schieckoff](mailto:bentley.schieckoff@uni-konstanz.de), University of Konstanz <br />
+[Maximilian Sprengholz](mailto:maximilian.sprengholz@hu-berlin.de), Humboldt-Universität zu Berlin.
 
 We provide a review of the literature on the labor market integration of immigrant women in Europe and some current descriptive statistics.
+
+__See [online appendix](http://pages.cms.hu-berlin.de/sprenmax/fem-lit-review/).__
 
 
 ## Project organization
@@ -19,8 +24,6 @@ We provide a review of the literature on the labor market integration of immigra
 │   ├── raw            <- The original, immutable data dump (RO)
 │   └── temp           <- Intermediate, transformed data (PG)
 ├── docs               <- Documentation
-│   ├── manuscript     <- Manuscript source (HW)
-│   └── reports        <- Other project reports and notebooks (HW)
 ├── results
 │   ├── figures        <- Figures for the manuscript or reports (PG)
 │   ├── misc           <- Other output (PG)
@@ -54,4 +57,4 @@ This project is licensed under the terms of the [MIT License](/LICENSE.md)
 
 Please cite this project as:
 
-Bentley Schieckoff, Maximilian Sprengholz (2021). Female Employment after Migration Literature Review, version 0.1.0. Url: https://scm.cms.hu-berlin.de/sprenmax/fem-lit-review
+Bentley Schieckoff, Maximilian Sprengholz (2021). Female Employment after Migration Literature Review, version 0.2.0. Url: https://scm.cms.hu-berlin.de/sprenmax/fem-lit-review

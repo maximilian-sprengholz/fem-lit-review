@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - python=3.8
+  - ipykernel
   - matplotlib=3.3.*
   - numpy=1.19.*
   - pandas=1.2.*
@@ -11,7 +12,9 @@ dependencies:
   - pandoc-crossref=0.3.9.0
   - pip=20.3.3
   - plotly=4.14.1
-  - python-kaleido=0.1.0
+  - pytables=3.6.1
+  - openpyxl=3.0.5
   - pip:
     - eurostat==0.2.1
+    - kaleido==0.1.0
     - pandoc-include==0.8.4
