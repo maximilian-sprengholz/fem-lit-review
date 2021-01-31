@@ -1,10 +1,10 @@
 ---
 title:
   'Online Appendix: The labor market integration of immigrant women in Europe. A review.'
-subtitle: "Version <b>0.2.0</b>"
-date: "2021-01-10"
+subtitle: "Version <b>0.2.1</b>"
+date: "2021-01-31"
 titleDelim: .
-figureTemplate: __$$figureTitle$$ $$i$$$$titleDelim$$__ $$t$$
+figureTemplate: __$$figureTitle$$ A$$i$$$$titleDelim$$__ $$t$$
 subfigureTemplate: __$$figureTitle$$ $$i$$$$titleDelim$$__ $$t$$
 subfigureChildTemplate: __($$i$$)__ $$t$$
 tableTemplate: __$$tableTitle$$ $$i$$$$titleDelim$$__ $$t$$
@@ -75,7 +75,7 @@ The order of presentation of destination countries corresponds to a (history bas
 ![Immigrant population across Europe by gender and origin groups, 2019](){#fig:imgpop_2019 class="dummy"}
 
 <p class="fignote">
-The grey area marks countries that make up southern Europe (SE) according to our definition.<br />
+The dashed vertical lines separate northern-western Europe (NWE) on the left, southern Europe (SE) in the center, and central and eastern Europe (CEE) on the right.<br />
 Source: [UNDESA](https://www.un.org/en/development/desa/population/migration/data/estimates2/estimates19.asp)
 </p>
 </div>
@@ -106,7 +106,7 @@ Source: [UNDESA](https://www.un.org/en/development/desa/population/migration/dat
 ![Nativity and gender gaps in labor force participation rates by country, 2019](){#fig:dd_2019_lfp class="dummy"}
 
 <p class="fignote">
-Age 15-64. Immigrants include all immigrants for which there is data available, irrespective of origin. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. The grey area marks countries that make up southern Europe (SE) according to our definition. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
+Age 15-64. Immigrants include all immigrants for which there is data available, irrespective of origin. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. The dashed vertical lines separate northern-western Europe (NWE) on the left, southern Europe (SE) in the center, and central and eastern Europe (CEE) on the right. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
 Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?code=lfsa_argacob)
 </p>
 </div>
@@ -149,7 +149,7 @@ Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?c
 ![Nativity and gender gaps in unemployment rates by country, 2019](){#fig:dd_2019_unemp class="dummy"}
 
 <p class="fignote">
-The unemployment rate represents a share of the population active on the labor market. Immigrants include all immigrants for which there is data available, irrespective of origin. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. The grey area marks countries that make up southern Europe (SE) according to our definition. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
+The unemployment rate represents a share of the population active on the labor market. Immigrants include all immigrants for which there is data available, irrespective of origin. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. The dashed vertical lines separate northern-western Europe (NWE) on the left, southern Europe (SE) in the center, and central and eastern Europe (CEE) on the right. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
 Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?code=lfsa_urgacob)
 </p>
 </div>
@@ -192,7 +192,7 @@ Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?c
 ![Nativity and gender gaps in part-time employment rates by country, 2019](){#fig:dd_2019_pt class="dummy"}
 
 <p class="fignote">
-Part-time employment largely based on respondents self-assessment. Immigrants include all immigrants for which there is data available, irrespective of origin. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. The grey area marks countries that make up southern Europe (SE) according to our definition. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
+Part-time employment largely based on respondents self-assessment. Immigrants include all immigrants for which there is data available, irrespective of origin. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. The dashed vertical lines separate northern-western Europe (NWE) on the left, southern Europe (SE) in the center, and central and eastern Europe (CEE) on the right. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
 Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?code=lfsa_eppgacob)
 </p>
 </div>
@@ -236,7 +236,7 @@ Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?c
 ![Nativity and gender gaps in temporary employment rates by country, 2019](){#fig:dd_2019_temp class="dummy"}
 
 <p class="fignote">
-Temporary employment indicates no permanent work contract. Immigrants include all immigrants for which there is data available, irrespective of origin. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. The grey area marks countries that make up southern Europe (SE) according to our definition. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
+Temporary employment indicates no permanent work contract. Immigrants include all immigrants for which there is data available, irrespective of origin. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. The dashed vertical lines separate northern-western Europe (NWE) on the left, southern Europe (SE) in the center, and central and eastern Europe (CEE) on the right. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
 Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?code=lfsa_etpgacob)
 </p>
 </div>
@@ -280,7 +280,7 @@ Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?c
 
 <p class="fignote">
 Overqualification measure based on respondent's self-assessment that qualifications and skills would allow more
-demanding tasks than current job. Immigrants include all immigrants for which there is data available, irrespective of origin. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. The grey area marks countries that make up southern Europe (SE) according to our definition. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
+demanding tasks than current job. Immigrants include all immigrants for which there is data available, irrespective of origin. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. The dashed vertical lines separate northern-western Europe (NWE) on the left, southern Europe (SE) in the center, and central and eastern Europe (CEE) on the right. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
 Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?code=lfso_14loq)
 </p>
 </div>

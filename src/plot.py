@@ -259,8 +259,9 @@ fig.for_each_trace(
     lambda t: t.update(marker_color=t.marker.color.replace('0.5','0.8'))
 )
 
-# add invisible spacing right and left
-fig.add_vrect(x0=13.5, x1=18.5, fillcolor="black", opacity=0.05, secondary_y=False) # buggy, draws only from y=0 to y=1 if no y value specificied
+# add separators between origin groups
+fig.add_vline(x = 13.5, line_color='rgba(0, 0, 0, 1)', line_dash='dash', line_width=1)
+fig.add_vline(x = 18.5, line_color='rgba(0, 0, 0, 1)', line_dash='dash', line_width=1)
 
 # Add scatter with immigrant total pop share
 df_plot = df_undesa[
@@ -673,9 +674,12 @@ for idx, var in enumerate(vars.items()):
                 )
             )
     fig.add_hline(y=0, line_color='rgba(0, 0, 0, 1)', line_width=1)
-    fig.add_vrect(
-        x0=13.5, x1=18.5,
-        fillcolor="black", opacity=0.05, line_width=0)
+    fig.add_vline(
+        x = 13.5 if vname!= 'overq' else 9.5,
+        line_color='rgba(0, 0, 0, 1)', line_dash='dash', line_width=1)
+    fig.add_vline(
+        x = 18.5 if vname!= 'overq' else 14.5,
+        line_color='rgba(0, 0, 0, 1)', line_dash='dash', line_width=1)
     fig.update_layout(
         #title = '<b>Nativity and gender gaps in ' + vlbl + ' rates,' + plotyear + '</b>',
         legend_title_text = '<b> Immigrant women vs. </b>',
