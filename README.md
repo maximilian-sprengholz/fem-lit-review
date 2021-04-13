@@ -1,6 +1,6 @@
 # Female Employment after Migration Literature Review
 
-_Version 0.2.0_
+_Version 0.2.2_
 
 [Bentley Schieckoff](mailto:bentley.schieckoff@uni-konstanz.de), University of Konstanz <br />
 [Maximilian Sprengholz](mailto:maximilian.sprengholz@hu-berlin.de), Humboldt-Universität zu Berlin.
