@@ -1,7 +1,7 @@
 ---
 title:
   'Online Appendix: The labor market integration of immigrant women in Europe. A review.'
-subtitle: "Version <b>0.2.1</b>"
+subtitle: "Version <b>0.2.2</b>"
 date: "2021-01-31"
 titleDelim: .
 figureTemplate: __$$figureTitle$$ A$$i$$$$titleDelim$$__ $$t$$
