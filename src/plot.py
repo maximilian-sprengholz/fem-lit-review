@@ -5,8 +5,8 @@ import sys
 import re
 from pathlib import Path
 import math
-import pandas as pd
 import numpy as np
+import pandas as pd
 import matplotlib
 import plotly.express as px
 import plotly.io as pio
@@ -144,7 +144,7 @@ for i, s in enumerate(['TOTAL','F','M'],1):
         'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia',
         'Spain', 'Sweden', 'United Kingdom']
     df['EU'] = df[orig_eu].sum(axis=1)
-    df['TC'] = df[df.columns.difference(np.append(orig_eu, ['year','country','Total','EU','Other North']))].sum(axis=1)
+    df['Non-EU'] = df[df.columns.difference(np.append(orig_eu, ['year','country','Total','EU','Other North']))].sum(axis=1)
     df = df.drop(columns=['Other South']) # TC
     df = df.rename(columns={'Other North': 'Unknown'}) # Unknown if EU or TC
 
@@ -157,8 +157,8 @@ for i, s in enumerate(['TOTAL','F','M'],1):
     df['popshare_for'] = df['pop'].divide(df['popshare_for'], fill_value=0)
 
     # keep only top 5 origin countries and aggregates
-    df['orig_rank'] = df.loc[df['c_birth'].isin(['Total', 'EU','TC', 'Other']) == False].groupby(['country'])['pop'].rank(method="first", ascending=False)
-    df = df[(df['orig_rank'].isin(list(range(1,6)))) | (df['c_birth'].isin(['Total', 'EU', 'TC', 'Other']))]
+    df['orig_rank'] = df.loc[df['c_birth'].isin(['Total', 'EU', 'Non-EU', 'Other']) == False].groupby(['country'])['pop'].rank(method="first", ascending=False)
+    df = df[(df['orig_rank'].isin(list(range(1,6)))) | (df['c_birth'].isin(['Total', 'EU', 'Non-EU', 'Other']))]
     df = df.sort_values(by=['country','orig_rank'], axis=0)
 
     # add sex variable
@@ -208,12 +208,14 @@ df_undesa['country_group'] = c.astype('category')
 fig = make_subplots(specs=[[{"secondary_y": True}]])
 
 df_plot = df_undesa[
-    (df_undesa['c_birth'].isin(['EU','TC', 'Unknown'])) & (df_undesa['sex']!='TOTAL')
+    (df_undesa['c_birth'].isin(['EU','Non-EU', 'Unknown'])) & (df_undesa['sex']!='TOTAL')
 ]
 
 # add every trace manually and then stack
 namelist = ['Women', 'Men']
 k = 0
+colorlist = ['rgba(0,119,187,0.5)', 'rgba(136,204,238,0.5)', 'rgba(136,34,85,0.5)',
+    'rgba(204,102,119,0.5)', 'rgba(120,120,120,0.5)', 'rgba(180,180,180,0.5)']
 for i, cb in enumerate(df_plot['c_birth'].unique()):
     for j, s in enumerate(df_plot['sex'].unique()):
 
@@ -227,7 +229,7 @@ for i, cb in enumerate(df_plot['c_birth'].unique()):
                 x = df_subplot['country'],
                 y = df_subplot['pop'],
                 hovertemplate = '<b>%{x}</b><br>Origin: ' + cb + '<br>Gender: ' + namelist[j] + '<br>Population: %{y:.3s}<extra></extra>',
-                marker_color = ptheme.colors_paired_transp[k+i*2],
+                marker_color = colorlist[k],
                 marker_line_width=0
             ),
             secondary_y=False,
@@ -296,7 +298,7 @@ fig.write_image(wd + 'results/figures/' + 'imgpop_' + str(baseyear) + '.svg')
 
 
 #
-# (2) Shares of top 5 origins relatove to immigrant population in 2019 by gender
+# (2) Shares of top 5 origins relative to immigrant population in 2019 by gender
 #
 '''
 Interactive: User can select country.
@@ -332,13 +334,15 @@ for c in clist:
             df_subplot = df_plot.loc[
                 (df_plot['sex']==s)
                 & (df_plot['country']==c),
-                ['country', 'sex','c_birth','popshare_for']]
+                ['country', 'sex','c_birth','popshare_for']
+                ].sort_values('popshare_for', ascending=False)
+
             if c=='Austria':
                 # add traces manually for first country
                 trace = go.Bar(
                     x = df_subplot['popshare_for'],
                     y = df_subplot['c_birth'],
-                    marker_color = ptheme.colors_paired_transp[j*4],
+                    marker_color = ptheme.colors_paired_transp[j*2],
                     marker_line_width=0,
                     visible = True,
                     showlegend = False,
@@ -360,7 +364,6 @@ for c in clist:
                 args = [{'x': xdata, 'y': ydata, 'visible': True, 'showlegend': False, 'text': ydata, 'customdata': customdata}],
                 label = c)
         )
-
 # style
 fig.update_layout(
     yaxis_title = '5 largest origin groups',
@@ -666,7 +669,7 @@ for idx, var in enumerate(vars.items()):
                     y = df_subplot['value'],
                     mode = 'markers',
                     marker_symbol = markerlist[j],
-                    marker_color = ptheme.colors_paired_transp[i],
+                    marker_color = ptheme.colors_paired_transp[i+j*2],
                     legendgroup = mcat,
                     showlegend = legendShowDict[rel],
                     name = labelDict[mcat],
@@ -852,8 +855,8 @@ for idx, var in enumerate(vars.items()):
                                     y = df_subplot['value'],
                                     mode = 'lines+markers',
                                     marker_symbol = markerlist[j],
-                                    marker_color = ptheme.colors_paired_transp[i+4],
-                                    line_color = ptheme.colors_paired_transp[i+4],
+                                    marker_color = ptheme.colors_paired_transp[i+2],
+                                    line_color = ptheme.colors_paired_transp[i+2],
                                     line_width = 2,
                                     line_dash = linelist[j],
                                     connectgaps=True,

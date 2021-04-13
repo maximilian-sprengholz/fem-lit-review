@@ -5,7 +5,7 @@ checksetup:
 	&& echo $$(which python)
 
 analysis:
-	python3 src/plot.py
+	python src/plot.py
 
 docs:
 	cd docs \
