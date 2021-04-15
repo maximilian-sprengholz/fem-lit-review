@@ -1,4 +1,4 @@
-# Female Employment after Migration Literature Review
+# The labor market integration of immigrant women in Europe. A review.
 
 _Version 0.2.2_
 
