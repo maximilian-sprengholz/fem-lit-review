@@ -57,4 +57,5 @@ This project is licensed under the terms of the [MIT License](/LICENSE.md)
 
 Please cite this project as:
 
-Bentley Schieckoff, Maximilian Sprengholz (2021). Female Employment after Migration Literature Review, version 0.2.2. Url: https://scm.cms.hu-berlin.de/sprenmax/fem-lit-review
+Bentley Schieckoff, Maximilian Sprengholz (2021). The labor market integration of
+immigrant women in Europe. A review. Supplementary materials, version 0.2.2. Url: https://scm.cms.hu-berlin.de/sprenmax/fem-lit-review
