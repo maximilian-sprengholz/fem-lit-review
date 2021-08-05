@@ -788,7 +788,7 @@ for idx, var in enumerate(vars.items()):
     '''
     if (vname != 'overq'):
         df_plot = df[
-            (df['measure']!='avg') & (df['sex']=='F') & (df['c_birth']!='Nat')
+            (df['measure']!='avg') & (df['sex']=='F') & (df['c_birth']!='Nat') & (df['year'].isin(range(1995, baseyear+1)))
         ]
 
         # start with empty facet plot
@@ -796,6 +796,7 @@ for idx, var in enumerate(vars.items()):
             'Year': [2000,2000,2000], 'y': [0,0,0],
             'c_birth': ['Foreign born', 'EU born', 'Non-EU born (TC)']
         })
+        # caution: order is somehow reversed via the express function (decrement in loop!)
         fig = px.scatter(dummy_df, x='Year', y='y', facet_row='c_birth', facet_row_spacing=0.1)
         fig.data = [] # only layout needed
         # fig.update_traces(showlegend=False, visible=False)
@@ -828,7 +829,7 @@ for idx, var in enumerate(vars.items()):
                                 & (df_plot['measure_cat']==mcat)
                                 & (df_plot['c_birth']==bcat)
                                 & (df_plot['country_label']==c),
-                                ['country_label', 'year','value']]
+                                ['country_label', 'year','value','c_birth']]
                             if c=='Austria':
                                 # add traces manually for first country
                                 trace = go.Scatter(
@@ -848,7 +849,7 @@ for idx, var in enumerate(vars.items()):
                                     text = df_subplot['country_label'],
                                     hovertemplate = '<b>%{text}</b><br>Year: %{x}<br>Gap (pp.): %{y}<br>Immigrant women<br>vs. ' + labelDict[mcat] + '<extra></extra>',
                                 )
-                                fig.add_trace(trace, row=k+1, col=1)
+                                fig.add_trace(trace, row=3-k, col=1)
                                 # add traces one by one (second set)
                                 trace = go.Scatter(
                                     x = df_subplot['year'],
@@ -867,7 +868,7 @@ for idx, var in enumerate(vars.items()):
                                     text = df_subplot['country_label'],
                                     hovertemplate = '<b>%{text}</b><br>Year: %{x}<br>Gap (pp.): %{y}<br>Immigrant women<br>vs. ' + labelDict[mcat] + '<extra></extra>',
                                 )
-                                fig.add_trace(trace, row=k+1, col=1)
+                                fig.add_trace(trace, row=3-k, col=1)
                             # store associated data for buttons
                             xdata.append(df_subplot['year'])
                             ydata.append(df_subplot['value'])

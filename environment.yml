@@ -4,8 +4,10 @@ channels:
   - defaults
 dependencies:
   - python=3.8
-  - ipykernel
+  - ipykernel=6.0.*
+  - kaleido-core=0.2.*
   - matplotlib=3.3.*
+  - nbformat=5.1.*
   - numpy=1.19.*
   - pandas=1.2.*
   - pandoc=2.11.3.1

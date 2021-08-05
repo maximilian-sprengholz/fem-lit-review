@@ -57,7 +57,7 @@ We provide some additional notes on the respective samples and measures in the f
 
 The order of presentation of destination countries corresponds to a (history based) grouping into north-western Europe (NWE), southern Europe (SE), and central and eastern Europe (CEE). We restrict destinations to countries for which data is available from both UNDESA and Eurostat:
 
-| Destination Country group | Countries |
+| Destination Country Group | Countries |
 | ------------- | -------------------------------------- |
 | North-western Europe | Austria, Belgium, Denmark, Finland, France, Germany, Iceland, Ireland, Luxembourg, the Netherlands, Norway, Sweden, Switzerland, UK |
 | Southern Europe | Greece, Malta, Italy, Portugal, Spain |
@@ -132,7 +132,7 @@ Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?c
 ![Trend in nativity and gender gaps in labor force participation rates by country, gender and origin group, 2019](){#fig:dd_trend_lfp class="dummy"}
 
 <p class="fignote">
-Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
+Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. Lighter shades of markers represent the Eurostat flag 'low reliability'. Values for EU- and non-EU-immigrants refer to EU28, but in many cases there are also Eurostat figures available for EU15 (including earlier years), see source.<br />
 Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?code=lfsa_argacob)
 </p>
 </div>
@@ -218,7 +218,7 @@ Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?c
 ![Trend in nativity and gender gaps in part-time employment rates by country, gender and origin group, 2019](){#fig:dd_trend_pt class="dummy"}
 
 <p class="fignote">
-Part-time employment largely based on respondents self-assessment. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
+Part-time employment largely based on respondents self-assessment. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. Lighter shades of markers represent the Eurostat flag 'low reliability'. Values for EU- and non-EU-immigrants refer to EU28, but in many cases there are also Eurostat figures available for EU15 (including earlier years), see source.<br />
 Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?code=lfsa_eppgacob)
 </p>
 </div>
@@ -262,7 +262,7 @@ Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?c
 ![Trend in nativity and gender gaps in temporary employment rates by country, gender and origin group, 2019](){#fig:dd_trend_temp class="dummy"}
 
 <p class="fignote">
-Temporary employment indicates no permanent work contract. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. Lighter shades of markers represent the Eurostat flag 'low reliability'.<br />
+Temporary employment indicates no permanent work contract. Age 15-64. Markers represent the values obtained by subtracting the comparison group value from the value for immigrant women. Lighter shades of markers represent the Eurostat flag 'low reliability'. Values for EU- and non-EU-immigrants refer to EU28, but in many cases there are also Eurostat figures available for EU15 (including earlier years), see source.<br />
 Source: [Eurostat](https://ec.europa.eu/eurostat/web/products-datasets/product?code=lfsa_etpgacob)
 </p>
 </div>
