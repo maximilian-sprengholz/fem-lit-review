@@ -1,6 +1,6 @@
 # The labor market integration of immigrant women in Europe. A review.
 
-_Version 0.2.2_
+_Version 0.2.3_
 
 [Bentley Schieckoff](mailto:bentley.schieckoff@uni-konstanz.de), University of Konstanz <br />
 [Maximilian Sprengholz](mailto:maximilian.sprengholz@hu-berlin.de), Humboldt-Universität zu Berlin.
