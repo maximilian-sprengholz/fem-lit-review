@@ -295,6 +295,7 @@ fig.update_layout(
     height = 600
 )
 fig.write_image(wd + 'results/figures/' + 'imgpop_' + str(baseyear) + '.svg')
+fig.write_image(wd + 'results/figures/' + 'imgpop_' + str(baseyear) + '.pdf')
 
 
 #
@@ -706,6 +707,7 @@ for idx, var in enumerate(vars.items()):
         height = 600
     )
     fig.write_image(wd + 'results/figures/' + 'dd_' + str(plotyear) + '_' + vname + '.svg')
+    fig.write_image(wd + 'results/figures/' + 'dd_' + str(plotyear) + '_' + vname + '.pdf')
 
     #
     # (2) plot absolute values for 2019 (2014) by origin, one plot per country
@@ -778,6 +780,7 @@ for idx, var in enumerate(vars.items()):
         height = 1000
     )
     fig.write_image(wd + 'results/figures/' + 'abs_' + str(plotyear) + '_' + vname + '.svg')
+    fig.write_image(wd + 'results/figures/' + 'abs_' + str(plotyear) + '_' + vname + '.pdf')
 
     #
     # (3) plot trends in gaps by origin over time, one plot per country
