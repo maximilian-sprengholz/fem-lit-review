@@ -1,8 +1,8 @@
 ---
 title:
-  'Online Appendix: The labor market integration of immigrant women in Europe. A review.'
-subtitle: "Version <b>0.2.3</b>"
-date: "2021-08-05"
+  'Online Appendix: The labor market integration of immigrant women in Europe: Context, theory and evidence'
+subtitle: "Version <b>0.2.4</b>"
+date: "2021-10-13"
 titleDelim: .
 figureTemplate: __$$figureTitle$$ A$$i$$$$titleDelim$$__ $$t$$
 subfigureTemplate: __$$figureTitle$$ $$i$$$$titleDelim$$__ $$t$$
@@ -28,7 +28,7 @@ subfigureRefIndexTemplate: $$i$$$$suf$$$$s$$
 
 ## Scope
 
-This online appendix supplements the literature review _The labor market integration of immigrant women in Europe. A review_ by [Bentley Schieckoff](mailto:bentley.schieckoff@uni-konstanz.de), University of Konstanz, and [Maximilian Sprengholz](mailto:maximilian.sprengholz@hu-berlin.de), Humboldt-Universität zu Berlin (2021, mimeo). We provide descriptive statistics on:
+This online appendix supplements the literature review _The labor market integration of immigrant women in Europe: Context, theory and evidence_ by [Bentley Schieckoff](mailto:bentley.schieckoff@uni-konstanz.de), University of Konstanz, and [Maximilian Sprengholz](mailto:maximilian.sprengholz@hu-berlin.de), Humboldt-Universität zu Berlin (2021, mimeo). We provide descriptive statistics on:
 
 1. Immigrant population in Europe (2019)
     - Immigrant population by gender and origin group (EU vs. non-EU) across destination countries

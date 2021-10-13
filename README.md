@@ -1,6 +1,6 @@
-# The labor market integration of immigrant women in Europe. A review.
+# The labor market integration of immigrant women in Europe: Context, theory and evidence
 
-_Version 0.2.3_
+_Version 0.2.4_
 
 [Bentley Schieckoff](mailto:bentley.schieckoff@uni-konstanz.de), University of Konstanz <br />
 [Maximilian Sprengholz](mailto:maximilian.sprengholz@hu-berlin.de), Humboldt-Universität zu Berlin.
@@ -57,5 +57,4 @@ This project is licensed under the terms of the [MIT License](/LICENSE.md)
 
 Please cite this project as:
 
-Bentley Schieckoff, Maximilian Sprengholz (2021). The labor market integration of
-immigrant women in Europe. A review. Supplementary materials, version 0.2.3. Url: https://scm.cms.hu-berlin.de/sprenmax/fem-lit-review
+Bentley Schieckoff, Maximilian Sprengholz (2021). The labor market integration of immigrant women in Europe: Context, theory and evidence. Supplementary materials, version 0.2.4. Url: https://scm.cms.hu-berlin.de/sprenmax/fem-lit-review

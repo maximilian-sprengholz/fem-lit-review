@@ -454,7 +454,7 @@ try: # try recode with directly fetched data
             # create dict entry with selection
             dfs[vname] = df[
                 (df['age']=='Y15-64') &
-                (df['c_birth'].isin(['EU28_FOR', 'NEU28_FOR', 'FOR', 'NAT'])) &
+                (df['c_birth'].isin(3)) &
                 (df['geo\\time'].isin(['EA19', 'EU15', 'EU27_2020']) == False) &
                 (df['sex'].isin(['F', 'M']))
             ]
@@ -688,7 +688,7 @@ for idx, var in enumerate(vars.items()):
         #title = '<b>Nativity and gender gaps in ' + vlbl + ' rates,' + plotyear + '</b>',
         legend_title_text = '<b> Immigrant women vs. </b>',
         xaxis_title = 'Country',
-        yaxis_title = 'Gap in' + vlbl + ' rates (pp)',
+        yaxis_title = 'Gap in ' + vlbl + ' rates (pp)',
         xaxis = dict(tickangle = -45),
         legend = dict(traceorder='reversed',
             x = 0.015 if vname != 'pt' else 0.985,
@@ -768,7 +768,7 @@ for idx, var in enumerate(vars.items()):
     )
     fig.update_yaxes(showticklabels=True, title='', dtick=20, tick0=0)
     fig.add_annotation(
-        text = vlbl.capitalize() + 'rate (in percent)', align = 'center',
+        text = vlbl.capitalize() + ' rate (in percent)', align = 'center',
         xref = 'paper', yref = 'paper', xanchor = 'right', yanchor='middle',
         x = -0.055, y=0.5, showarrow=False, textangle=-90, font=dict(size=14)
     )
@@ -914,7 +914,7 @@ for idx, var in enumerate(vars.items()):
         # Single label for y and x
         fig.update_xaxes(showticklabels=True, dtick=5)
         fig.layout.yaxis['title']=''
-        fig.layout.yaxis2['title'] = 'Gap in' + vlbl + ' rates (pp)'
+        fig.layout.yaxis2['title'] = 'Gap in ' + vlbl + ' rates (pp)'
         fig.layout.yaxis3['title']=''
         fig.update_yaxes(showticklabels=True)
         # zero line
