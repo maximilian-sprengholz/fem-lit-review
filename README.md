@@ -57,4 +57,4 @@ This project is licensed under the terms of the [MIT License](/LICENSE.md)
 
 Please cite this project as:
 
-Bentley Schieckoff, Maximilian Sprengholz (2021). The labor market integration of immigrant women in Europe: Context, theory and evidence. Supplementary materials, version 0.2.4. Url: https://scm.cms.hu-berlin.de/sprenmax/fem-lit-review
+Bentley Schieckoff, Maximilian Sprengholz (2021). The labor market integration of immigrant women in Europe: Context, theory and evidence. Supplementary materials, version 0.2.4. Url: https://github.com/maximilian-sprengholz/fem-lit-review
