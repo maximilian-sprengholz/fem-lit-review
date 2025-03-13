@@ -7,7 +7,7 @@ _Version 0.2.4_
 
 We provide a review of the literature on the labor market integration of immigrant women in Europe and some current descriptive statistics.
 
-__See [online appendix](http://pages.cms.hu-berlin.de/sprenmax/fem-lit-review/).__
+__See [online appendix](https://maximilian-sprengholz.github.io/fem-lit-review/).__
 
 
 ## Project organization
